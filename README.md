@@ -2,7 +2,8 @@
 A library that unites Service Fabric's config packages and ASP.NET Core's configuration.
 
 ## Usage
-Add it to your startup class
+Install it from [NuGet](https://www.nuget.org/packages/SomethingSomethingConfig/), `Install-Package SomethingSomethingConfig`,
+and add the the providers to your startup class
 ```
 public class Startup
 {
