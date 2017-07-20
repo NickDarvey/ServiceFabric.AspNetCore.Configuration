@@ -31,7 +31,7 @@ namespace SomethingSomethingConfig
             var configs = pkg
                 .Settings.Sections
                 .SelectMany(section => section.Parameters
-                .Select(param => (Key: $"{section.Name}{ConfigurationPath.KeyDelimiter}{param.Name}", Value: param.Value)));
+                .Select(param => new KeyValuePair<string, string>($"{section.Name}{ConfigurationPath.KeyDelimiter}{param.Name}", param.Value)));
 
             foreach (var config in configs) { Data[config.Key] = config.Value; }
         }
