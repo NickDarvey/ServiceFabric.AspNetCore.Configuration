@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Fabric;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SomethingSomethingConfig
 {
@@ -12,10 +10,10 @@ namespace SomethingSomethingConfig
     {
         private readonly Func<ConfigurationPackage> _getConfig;
 
-        public ServiceFabricConfigurationProvider(ServiceContext ctx, string configPackageObjectName)
+        public ServiceFabricConfigurationProvider(ICodePackageActivationContext ctx, string configPackageObjectName)
         {
-            _getConfig = () => ctx.CodePackageActivationContext.GetConfigurationPackageObject(configPackageObjectName);
-            ctx.CodePackageActivationContext.ConfigurationPackageModifiedEvent += (sender, e) =>
+            _getConfig = () => ctx.GetConfigurationPackageObject(configPackageObjectName);
+            ctx.ConfigurationPackageModifiedEvent += (sender, e) =>
             {
                 Reload(e.NewPackage);
                 OnReload();

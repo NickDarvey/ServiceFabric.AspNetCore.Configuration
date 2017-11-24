@@ -7,11 +7,11 @@ and add the the providers to your startup class
 ```
 public class Startup
 {
-    public Startup(IHostingEnvironment env, StatelessServiceContext ctx)
+    public Startup(IHostingEnvironment env)
     {
         var builder = new ConfigurationBuilder()
             .AddServiceFabricConfiguration(
-                ctx: ctx, configPackageObjectName: "Config");
+                ctx: FabricRuntime.GetActivationContext(), configPackageObjectName: "Config");
         Configuration = builder.Build();
     }
 }
