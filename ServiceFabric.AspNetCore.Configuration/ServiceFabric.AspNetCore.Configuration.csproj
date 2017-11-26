@@ -7,14 +7,15 @@
     <Version>2.0.0</Version>
     <Authors>Nick Darvey</Authors>
     <Company>Nick Darvey</Company>
-    <Product>SomethingSomethingConfig</Product>
+    <Product>NickDarvey.ServiceFabric.AspNetCore</Product>
     <PackageTags>service-fabric asp-net-core config configuration service fabric</PackageTags>
     <PackageReleaseNotes>Upgrades to ASP.NET Core 2.0, uses ICodePackageActivationContext instead of ServiceContext.</PackageReleaseNotes>
     <Description>A library that unites Service Fabric's config packages and ASP.NET Core's configuration.</Description>
-    <RepositoryUrl>https://github.com/NickDarvey/SomethingSomethingConfig</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/NickDarvey/SomethingSomethingConfig</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/NickDarvey/SomethingSomethingConfig/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/NickDarvey/ServiceFabric.AspNetCore.Configuration</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/NickDarvey/ServiceFabric.AspNetCore.Configuration</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/NickDarvey/ServiceFabric.AspNetCore.Configuration/blob/master/LICENSE</PackageLicenseUrl>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <PackageId>NickDarvey.ServiceFabric.AspNetCore.Configuration</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Fabric;
 using System.Linq;
 
-namespace SomethingSomethingConfig
+namespace NickDarvey.ServiceFabric.AspNetCore.Configuration
 {
     internal class ServiceFabricConfigurationProvider : ConfigurationProvider
     {

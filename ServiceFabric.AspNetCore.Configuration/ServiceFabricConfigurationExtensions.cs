@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using System.Fabric;
 
-namespace SomethingSomethingConfig
+namespace NickDarvey.ServiceFabric.AspNetCore.Configuration
 {
     public static class ServiceFabricConfigurationExtensions
     {
